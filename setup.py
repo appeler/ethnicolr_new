@@ -112,7 +112,8 @@ setup(
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=["tensorflow>=2.7.2,<3;platform_machine!='aarch64'",
                       "tensorflow-aarch64>=2.7.2,<3;platform_machine=='aarch64'",
-                      "pandas>=1.3.0"],
+                      "pandas>=1.3.0", "torch==2.0.1", "joblib==1.3.1", "tqdm==4.65.0",
+                      "scikit-learn==1.3.0"],
     # List additional groups of dependencies here (e.g. development
     # dependencies). You can install these using the following syntax,
     # for example:
@@ -160,6 +161,9 @@ setup(
             "pred_fl_reg_name=ethnicolr.pred_fl_reg_name:main",
             "pred_fl_reg_ln=ethnicolr.pred_fl_reg_ln:main",
             "pred_fl_reg_ln_five_cat=ethnicolr.pred_fl_reg_ln_five_cat:main",
+            "pred_fl_full_name=ethnicolr.pred_fl_full_name:main",
+            "pred_fl_last_name=ethnicolr.pred_fl_last_name:main",
+            "pred_census_last_name=ethnicolr.pred_census_last_name:main",
             ("pred_fl_reg_name_five_cat="
              "ethnicolr.pred_fl_reg_name_five_cat:main"),
             "pred_nc_reg_name=ethnicolr.pred_nc_reg_name:main",
